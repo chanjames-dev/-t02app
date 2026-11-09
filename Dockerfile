@@ -1,0 +1,15 @@
+# Stage 1: Build the application
+FROM node:24 AS build
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+
+COPY index.html ./
+RUN npm run build
+
+# Stage 2: Serve the application
+FROM nginx:alpine
+
+COPY --from=build /app/build /usr/share/nginx/html

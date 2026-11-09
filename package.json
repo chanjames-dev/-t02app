@@ -1,0 +1,8 @@
+{
+  "name": "t02app",
+  "version": "1.0.0",
+  "description": "Project 2 - Containerize and Run Locally",
+  "scripts": {
+    "build": "mkdir -p build && cp index.html build/index.html"
+  }
+}

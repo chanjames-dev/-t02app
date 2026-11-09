@@ -1,0 +1,8 @@
+.git
+.gitignore
+.dockerignore
+node_modules
+build
+local-fn
+sam-installation
+aws-sam-cli-linux-x86_64.zip
